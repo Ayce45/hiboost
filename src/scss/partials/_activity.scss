@@ -1,0 +1,100 @@
+#activity {
+    margin-left: 200px;
+    margin-top: 150px;
+    @media (max-width: $breakpoint-laptop) {
+        margin-left: 36px;
+        margin-right: 36px;
+        margin-top: 0px;
+        margin-bottom: 92px;
+      }
+      margin-bottom: 192px;
+    .activity-container {
+        position: relative;
+    .tree {
+        @media (max-width: $breakpoint-laptop) {
+            display: none;
+          }
+        .bulle {
+            width: 188px;
+            height: 188px;
+            position: absolute;
+            right: 0px;
+            &:nth-child(1) {
+                left: 92px;
+                top: -98px;
+            }
+            &:nth-child(2) {
+                left: -90px;
+                top: 14px;
+            }
+            &:nth-child(3) {
+                left: -90px;
+                top: 220px;
+            }
+            &:nth-child(4) {
+                left: 92px;
+                top: 315px;
+            }
+            &:nth-child(5) {
+                left: 270px;
+                top: 223px;
+            }
+            &:nth-child(6) {
+                left: 270px;
+                top: 6px;
+            }
+            img {
+                transition: all, 0.5s;
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+            &:last-child {
+                left: 0;
+                top: -13px;
+                img {
+                    width: calc(1477px / 4 );
+                    height: calc(1722px / 4 );
+                }
+
+                z-index: -1;
+            }
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: $white;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    }
+
+    .img-tree {
+        width: 100%;
+        margin-top: 90px;
+        @media (max-width: $breakpoint-mobile) {
+            display: block;
+          }
+          display: none;
+    }
+    .activity-text {
+        margin-left: 550px;
+        @media (max-width: $breakpoint-laptop) {
+            margin-left: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+    }
+    .description {
+        max-width: 429px;
+        margin-top: 20px;
+    }
+    .big-title {
+        padding-top: 60px;
+    }
+}
+}

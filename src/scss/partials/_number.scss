@@ -1,0 +1,53 @@
+#number {
+    background-color: $blue;
+    width: 100%;
+    .number-container {
+        padding-top: 92px;
+        margin-left: 61px;
+        margin-right: 61px;
+        padding-bottom: 92px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: $breakpoint-laptop) {
+            margin-left: 37px;
+            margin-right: 37px;
+            flex-direction: column;
+        }
+        .big-title {
+            margin-bottom: 20px;
+        }
+    
+        .text {
+            max-width: 369px;
+            .description {
+                @media (max-width: $breakpoint-laptop) {
+                    color: rgba($white,0.47);
+                }
+                color: $white;
+                max-width: 369px;
+            }
+        }
+        .number {
+            display: flex;
+            flex-direction: column;
+            .big-number {
+                color: $white;
+                font-size: 60px;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin-bottom: 4px;
+                text-align: center;
+                @media (max-width: $breakpoint-laptop) {
+                    margin-top: 32px;
+                }
+            }
+            .number-explain {
+                color: $white;
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+
+}

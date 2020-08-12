@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400&display=swap');
+@import 'partials/_reset';
+@import 'partials/_variable';
+@import 'partials/_util';
+@import 'partials/_header';
+@import 'partials/_activity';
+@import 'partials/_number';
+@import 'partials/_implantations';
+@import 'partials/_newsletter';
+@import 'partials/_images';
+@import 'partials/_news';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font;
+}

@@ -1,0 +1,313 @@
+#news {
+  @media (min-width: 1400px) {
+    max-width: 1288px;
+    margin: auto;
+    margin-top: 104px;
+  }
+  @media (max-width: $breakpoint-laptop) {
+    grid-template-columns: repeat(1, 1fr);
+    margin-left: 36px;
+    margin-right: 36px;
+    overflow: hidden;
+  }
+  margin-top: 104px;
+  margin-left: 63px;
+  margin-right: 60px;
+  .news-container {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    @media (max-width: $breakpoint-laptop) {
+      grid-template-columns: repeat(1, 1fr);
+      margin-bottom: -100px;
+    }
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    grid-auto-rows: minmax(100px, auto);
+    margin-top: 35px;
+    color: #ffffff;
+    .back1 {
+      background-image: url("../img/news/1.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: span 4;
+      grid-row: span 2/5;
+      width: 612px;
+      @media (max-width: $breakpoint-laptop) {
+        max-width: 100%;
+        width: auto;
+        height: 188px
+      }
+      height: 380px;
+      margin-left: auto;
+      margin-right: auto;
+      order: 2;
+    }
+    .back2 {
+      background-color: $blue;
+      width: 404px;
+      height: 192px;
+      @media (max-width: $breakpoint-laptop) {
+        width: 100%;
+      }
+      float: right;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 16px;
+      order: 1;
+      border-radius: 5px;
+      position: relative;
+      @media (max-width: $breakpoint-laptop) {
+        float: none;
+      }
+    }
+    .thing2 {
+      @media (max-width: $breakpoint-laptop) {
+        margin-top: 100px;
+      }
+      .thing3 {
+        @media (max-width: $breakpoint-laptop) {
+          margin-top: -100px;
+        }
+      }
+    }
+    .date {
+      align-items: center;
+      position: relative;
+      top: 272px;
+      margin-left: 35px;
+      margin-right: 35px;
+      color: $white;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      @media (max-width: $breakpoint-laptop) {
+        top: 95px;
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+    }
+    .blockquote {
+      blockquote {
+        max-width: 324px;
+        text-align: center;
+        font-family: "Ubuntu", italic;
+        font-style: italic;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 400;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @media (max-width: $breakpoint-mobile) {
+          width: 100%;
+        }
+      }
+      .autor {
+        color: rgba($white, 0.44);
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 25px;
+        position: absolute;
+        bottom: 8px;
+        right: 18px;
+      }
+      img {
+        max-width: 184px;
+        height: 150px;
+        opacity: 0.08;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+    }
+    .back3 {
+      top: -100px;
+      width: 404px;
+      height: 192px;
+      @media (max-width: $breakpoint-laptop) {
+        width: 100%;
+      }
+      background-color: $blue;
+      grid-column: span 2;
+      grid-row: span 1;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      border-radius: 5px;
+      img {
+        width: 154px;
+        height: 147px;
+      }
+    }
+    .back4 {
+      position: relative;
+      top: -100px;
+      margin-top: 16px;
+      background-image: url("../img/news/2.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: span 2;
+      grid-row: span 1;
+      width: 404px;
+      height: 361px;
+      @media (max-width: $breakpoint-laptop) {
+        width: 100%;
+        height: 270px;
+      }
+      margin-left: auto;
+      margin-right: auto;
+      .date {
+        top: 225px;
+        @media (max-width: $breakpoint-laptop) {
+          top: 160px;
+        }
+      }
+      p {
+        @media (max-width: $breakpoint-laptop) {
+          top: calc(160px + 5px);
+          font-size: 14px;
+        }
+        top: calc(225px + 5px);
+      }
+    }
+    .back5 {
+      position: relative;
+      background-image: url("../img/news/3.png");
+      border-radius: 5px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: span 2;
+      grid-row: span 1;
+      text-align: center;
+      width: 195px;
+      height: 220px;
+      @media (max-width: $breakpoint-laptop) {
+        width: 100%;
+        top: -100px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 27px;
+        height: 117px;
+      }
+    }
+    .back6 {
+      position: relative;
+      margin-top: 16px;
+      background-image: url("../img/news/4.png");
+      background-position: center;
+      border-radius: 5px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      grid-column: span 2;
+      grid-row: span 1;
+      text-align: center;
+      width: 195px;
+      height: 220px;
+      @media (max-width: $breakpoint-laptop) {
+        width: 100%;
+        top: -100px;
+        height: 117px;
+      }
+      .back-container {
+        width: 150px;
+        @media (max-width: $breakpoint-laptop) {
+          width: 200px;
+        }
+      }
+    }
+    h4 {
+      margin-left: 10px;
+      @media (max-width: $breakpoint-laptop) {
+        font-size: 10px;
+      }
+    }
+    .back-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-left: 0;
+      margin-right: 0;
+      width: 120px;
+      @media (max-width: $breakpoint-laptop) {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+      .social {
+        padding: 13px;
+        margin: 5px;
+        border: 2px solid white;
+        border-radius: 10px;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      p {
+        width: fit-content;
+        position: relative;
+        top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 9px;
+      }
+    }
+    .button-container.desktop-only {
+      position: relative;
+      top: -100px;
+      display: flex;
+      justify-content: flex-end;
+      @media (max-width: $breakpoint-laptop) {
+        justify-content: center;
+        display: none;
+      }
+    }
+    .button-container.mobile-only {
+      display: none!important;
+      @media (max-width: $breakpoint-laptop) {
+        display: flex!important;
+      }
+      position: relative;
+      top: -100px;
+
+      justify-content: center;
+    }
+    p {
+      position: relative;
+      @media (max-width: $breakpoint-laptop) {
+        font-size: 14px;
+        margin-right: 14px;
+      }
+      @media (max-width: $breakpoint-laptop) {
+        top: calc(95px + 5px);
+        margin-left: 24px;
+        margin-right: 24px;
+        line-height: 18px;
+      }
+      top: calc(272px + 5px);
+      margin-left: 35px;
+      margin-right: 35px;
+      color: $white;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 27px;
+    }
+    .back-container {
+      p {
+        @media (max-width: $breakpoint-laptop) {
+          font-size: 20px;
+          font-weight: 700;
+          line-height: 27px;
+          margin-right: 14px;
+        }
+      }
+    }
+  }
+}

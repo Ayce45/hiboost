@@ -1,0 +1,89 @@
+#implantations {
+    background: url('../img/implantations.png');
+    position: relative;
+    @media (max-width: $breakpoint-laptop) {
+        margin-left: 0;
+        background: url('../img/implantations_mobile.png');
+        background-size: cover;
+    }
+
+    @media (min-width: 1400px) {
+        max-width: 1288px;
+        margin: auto;
+      }
+    #hover:hover path {
+        fill: $blue;
+    }
+    #hover path {
+        transition: all .5s ease-in-out;
+        fill: $white;
+        stroke-width: 4px;
+        stroke: transparent;
+    }
+    #hover {
+        cursor: pointer;
+    }
+
+    .text-container {
+        padding-top: 369px;
+        padding-left: 62px;
+        padding-bottom: 78px;
+        @media (max-width: $breakpoint-laptop) {
+            padding-top: 56px;
+            padding-left: 31px;
+            padding-right: 31px;
+            padding-bottom: 0;
+        }
+    }
+    .big-title {
+        max-width: 349px;
+        @media (max-width: $breakpoint-laptop) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+    svg {
+        @media (max-width: $breakpoint-laptop) {
+            display: none;
+        }
+        position: absolute;
+        top: 63px;
+        right: 73px;
+    }
+    .mobile-only {
+        margin-left: 36px;
+        margin-right: 36px;
+        h4 {
+            margin-top: 41px;
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 25px;
+            color: $white;
+            margin-bottom: 11px;
+        }
+        .right {
+            margin-left: 36%;
+            display: flex;
+            flex-direction: column;
+        }
+        .left {
+            display: flex;
+            flex-direction: column;
+        }
+        .implantations-container {
+            display: flex;
+            margin-top: 18px;
+        
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 25px;
+                color: $white;
+            }
+            &:last-child {
+                padding-bottom: 110px;
+            }
+        }
+    
+    }
+}

@@ -1,0 +1,131 @@
+#newsletter {
+  background: linear-gradient(180deg, rgba(83, 156, 211, 0) 0%, $blue 100%),
+    url("../img/newsletter.png");
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 20px;
+  .newsletter-container {
+    padding-top: 140px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .big-title {
+    max-width: 414px;
+  }
+  .big-input {
+    margin-top: 30px;
+    height: 70px;
+    width: 616px;
+    height: 70px;
+    @media (max-width: $breakpoint-laptop) {
+      max-width: 304px;
+    }
+    border-radius: 5px;
+    border: transparent;
+  }
+  .big-input::placeholder {
+    padding-left: 26px;
+    padding-top: 26px;
+    padding-bottom: 25px;
+    opacity: 0.45;
+    color: $grey;
+    font-size: 16px;
+    font-family: 'Ubuntu', italic;
+    font-style: italic;
+  }
+  .button-in-input {
+    background-color: $blue;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 0;
+    top: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  .input-container {
+    position: relative;
+  }
+  .line-container {
+    
+    @media (max-width: $breakpoint-mobile) {
+      margin-top: 50px;
+    }
+    margin-top: 123px;
+    display: flex;
+    justify-content: center;
+    .line {
+      width: 1244px;
+      height: 0;
+      border: 1px solid $white;
+      opacity: 0.2;
+
+      @media (max-width: $breakpoint-mobile) {
+        margin-left: 36px;
+        margin-right: 36px;
+      }
+    }
+  }
+  nav {
+    @media (max-width: $breakpoint-laptop) {
+      flex-direction: column;
+    }
+    margin-top: 50px;
+    margin-left: 61px;
+    margin-right: 61px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    > ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      opacity: 0.55;
+      color: $white;
+      font-size: 14px;
+      font-weight: 700;
+      > li {
+        text-align: center;
+        display: block;
+        .follow-container {
+          @media (max-width: $breakpoint-laptop) {
+            flex-direction: row;
+            margin-bottom: 44px;
+            margin-top: 41px;
+          }
+        }
+        ul {
+          display: flex;
+          @media (max-width: $breakpoint-mobile) {
+            flex-direction: column;
+          }
+          li {
+            margin-right: 56px;
+            @media (max-width: $breakpoint-mobile) {
+              margin-right: 0;
+              margin-top: 10px;
+              opacity: 0.55;
+              font-size: 14px;
+              font-weight: 700;
+            }
+            transition: all, 0.2s ease-in-out;
+            &:hover {
+              transform: translateY(-5px);
+            }
+            &.follow {
+                margin-right: 19px;
+                font-weight: 400!important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

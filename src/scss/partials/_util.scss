@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+.container {
+    width: 94%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+.hidden {
+    display: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    @media screen and (max-width: $breakpoint-mobile) {
+        height: 50px!important;
+        width: 50px!important;
+    }
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.blue {
+    color: $blue;
+}
+
+.white {
+    color: $white!important;
+}
+
+.big-title {
+    max-width: 590px;
+    color: $lightblack;
+    font-size: 40px;
+    font-weight: 700;
+    @media (max-width: $breakpoint-laptop) {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+.description {
+    margin-top: 20px;
+    max-width: 470px;
+    color: rgba($lightblack, .47);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-right: 31px;
+    text-align: justify;
+    @media (max-width: $breakpoint-mobile) {
+        margin-right: 0;
+    }
+}
+
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+    .explain-button {
+        color: $grey;
+        font-size: 14px;
+        font-weight: 700;
+        margin-right: 12px;
+    }
+    @media (max-width: $breakpoint-laptop) {
+        justify-content: center;
+    }
+}
+.button {
+    transition: all .1s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.mobile-only {
+    display: none;
+    @media (max-width: $breakpoint-laptop) {
+        display: block;
+    }
+}
