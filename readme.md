@@ -1,6 +1,6 @@
 <h1 align="center">Bienvenue sur hiboost 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-5-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
   <a href="https://twitter.com/aycefr">
     <img alt="Twitter: aycefr" src="https://img.shields.io/twitter/follow/aycefr.svg?style=social" target="_blank" />
   </a>
