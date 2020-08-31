@@ -12,6 +12,7 @@
 
 ```bash
 npm install
+npm run start
 ```
 
 ## Capture d'écran
